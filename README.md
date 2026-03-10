@@ -59,6 +59,32 @@ Create `EXPLANATION.md` (max 250 words) containing:
 - **Why does your fix solve it?**
 - **One realistic case / edge case your tests still don’t cover**
 
+## How to Run
+
+### Running Tests Locally
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Run tests:
+   ```bash
+   pytest -v
+   ```
+
+### Running Tests with Docker
+
+1. Build the Docker image:
+   ```bash
+   docker build -t ai-experts-test .
+   ```
+
+2. Run tests in container:
+   ```bash
+   docker run --rm ai-experts-test
+   ```
+
 ## Submission
 
 - Submit a public GitHub repository URL containing your solution to the Google form link provided.
